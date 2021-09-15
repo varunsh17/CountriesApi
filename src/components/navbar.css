@@ -1,0 +1,46 @@
+.nav {
+  background: linear-gradient(to right, #8c81e9, #7303c0, #e95ac3, #f59bdb);
+  min-height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  color: rgb(255, 255, 255);
+  align-items: center;
+  font-size: 35px;
+  background-size: 300% 300%;
+  animation: gradient 10s ease-in-out infinite;
+}
+.nav button {
+  font-size: 20px;
+  margin-right: 4rem;
+  border: 1px transparent;
+  border-radius: 5px;
+}
+.nav span {
+  margin-left: 3rem;
+}
+@keyframes gradient {
+  0% {
+    background-position: center;
+  }
+  50% {
+    background-position: right;
+  }
+  100% {
+    background-position: center;
+  }
+}
+@media (max-width: 320px) {
+  .nav {
+    font-size: 20px;
+  }
+}
+@media (max-width: 522px) {
+  .nav button {
+    margin: 5px auto;
+    font-size: 15px;
+  }
+  .nav span {
+    font-size: 20px;
+    margin-left: 1rem;
+  }
+}
